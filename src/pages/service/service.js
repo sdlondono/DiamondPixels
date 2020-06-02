@@ -3,7 +3,7 @@ import { Nav } from '../../components'
 function Service() {
     return (
         <div>
-            <Nav flag={2}/>
+            <Nav flag={2} />
             <div className="row m-0">
                 <div className="col-md-12 p-4" style={{ backgroundImage: `url(${require('../../assets/img/fondo_service.jpg')})`, backgroundSize: "cover", height: 300 }}>
                     <h1 className="text-white mt-3">Diseño de Marca</h1>
@@ -28,16 +28,19 @@ function Service() {
                     <img src={require('../../assets/img/logo_hilda.png')} style={{ width: "70%" }} />
                 </div>
                 <div className="col-md-12 mt-5 px-5">
-                    <p style={{ color: "#363839", fontSize: 20 }}>HILDA SALAZAR ACCESORIOS</p>
+                    <p style={{ color: "#363839", fontSize: 20 }}>THINGS BY MG</p>
                     <hr style={{ background: "#35b4bc", width: "50%", marginLeft: 0 }} />
                     <p style={{ fontSize: 15, fontWeight: "bold" }}>Diseño de Marca - Ubicada en la ciudad de Cali</p>
                     <img src={require('../../assets/img/logo_things.png')} style={{ width: "70%" }} />
                 </div>
 
                 <div className="col-md-12 d-flex justify-content-center mt-5 p-5">
-                    <button className="btn" style={{ background: "#35b4bc", color: "white", borderRadius: 20, width: "40%"}}>CONTÁCTENOS</button>
+                    <button className="btn" style={{ background: "#35b4bc", color: "white", borderRadius: 20, width: "40%" }}>CONTÁCTENOS</button>
                 </div>
             </div>
+            <footer className="d-flex justify-content-center align-items-center p-3" style={{ background: "#35b4bc" }}>
+                <p className="p-0 m-0 text-white">Copyright © 2020 - Todos los Derechos Reservados - Diamond Pixels</p>
+            </footer>
         </div>
     );
 }

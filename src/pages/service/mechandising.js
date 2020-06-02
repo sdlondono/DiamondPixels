@@ -20,11 +20,14 @@ function Mechandising() {
                     <p style={{ fontSize: 15, fontWeight: "bold" }}>Diseño de Marca - Ubicada en la ciudad de Cali</p>
                     <img src={require('../../assets/img/img_merchandising.png')} style={{ width: "70%" }} />
                 </div>
-                
+
                 <div className="col-md-12 d-flex justify-content-center mt-5 p-5">
                     <button className="btn" style={{ background: "#35b4bc", color: "white", borderRadius: 20, width: "40%" }}>CONTÁCTENOS</button>
                 </div>
             </div>
+            <footer className="d-flex justify-content-center align-items-center p-3" style={{ background: "#35b4bc" }}>
+                <p className="p-0 m-0 text-white">Copyright © 2020 - Todos los Derechos Reservados - Diamond Pixels</p>
+            </footer>
         </div>
     );
 }
