@@ -5,7 +5,7 @@ function Nav(props) {
     console.log(props)
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="/"><img src={require('../assets/img/logo.png')} height="100" width="300" /></a>
+            <a className="navbar-brand" href="/"><img src={require('../assets/img/logo.png')}  width="300" /></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -16,10 +16,10 @@ function Nav(props) {
                         <Link className="nav-link mx-5" style={{ color: props.flag !== 1 ? "#35b4bc" : "#363839" }} to="/">Quiénes Somos</Link>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" style={{ color: props.flag !== 2 ? "#35b4bc" : "#363839" }} id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Servicios
                          </a>
-                        <div class="dropdown-menu  mx-5" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="dropdown-menu mx-5" aria-labelledby="navbarDropdownMenuLink" >
                             <Link class="dropdown-item" to="/service">Diseño de Marca</Link>
                             <a class="dropdown-item" href="/mechandising">Merchandising</a>
                             <a class="dropdown-item" href="#">Manual de Identidad</a>
@@ -32,7 +32,7 @@ function Nav(props) {
                         <a className="nav-link mx-5" style={{ color: "#35b4bc" }} href="#">Portafolio</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link mx-5" style={{ color: "#35b4bc" }} href="#">Contáctenos</a>
+                        <a className="nav-link mr-5" style={{ color: "#35b4bc" }} href="#">Contáctenos</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="https://www.instagram.com/diamondpixels_/"><img src={require('../assets/img/icono_instagram.png')} height={30} width={30} /></a>
